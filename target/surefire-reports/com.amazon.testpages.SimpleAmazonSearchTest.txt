@@ -1,0 +1,164 @@
+-------------------------------------------------------------------------------
+Test set: com.amazon.testpages.SimpleAmazonSearchTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 49.457 sec <<< FAILURE!
+search_amazon(com.amazon.testpages.SimpleAmazonSearchTest)  Time elapsed: 49.451 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+\extensions\webdriver-staging
+1413840080316	addons.xpi	DEBUG	checkForChanges
+1413840080340	addons.xpi	DEBUG	Directory state JSON differs: cache [] state [{"name":"winreg-app-global","addons":{"{BBDA0591-3099-440a-AA10-41764D9DB4DB}":{"descriptor":"C:\\ProgramData\\Symantec\\Symantec Endpoint Protection\\12.1.3001.165.105\\Data\\IPSFF","mtime":1406623549477,"rdfTime":1406623549473}}},{"name":"app-global","addons":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"descriptor":"C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","mtime":1412022267098,"rdfTime":1412022267011}}},{"name":"app-profile","addons":{"fxdriver@googlecode.com":{"descriptor":"C:\\Users\\pptipi\\AppData\\Local\\Temp\\anonymous3386957509747968548webdriver-profile\\extensions\\fxdriver@googlecode.com","mtime":1413840079870,"rdfTime":1413840079807}}}]
+1413840080346	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\pptipi\AppData\Local\Temp\anonymous3386957509747968548webdriver-profile\extensions.json
+1413840080348	addons.xpi	DEBUG	New add-on fxdriver@googlecode.com installed in app-profile
+1413840080459	addons.xpi-utils	DEBUG	Make addon app-profile:fxdriver@googlecode.com visible
+1413840080461	DeferredSave.extensions.json	DEBUG	Save changes
+1413840080461	DeferredSave.extensions.json	DEBUG	Save changes
+1413840080461	addons.xpi	DEBUG	New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
+1413840080466	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
+1413840080466	DeferredSave.extensions.json	DEBUG	Save changes
+1413840080466	DeferredSave.extensions.json	DEBUG	Save changes
+1413840080467	addons.xpi	DEBUG	New add-on {BBDA0591-3099-440a-AA10-41764D9DB4DB} installed in winreg-app-global
+1413840080478	addons.xpi-utils	DEBUG	Make addon winreg-app-global:{BBDA0591-3099-440a-AA10-41764D9DB4DB} visible
+1413840080479	DeferredSave.extensions.json	DEBUG	Save changes
+1413840080479	DeferredSave.extensions.json	DEBUG	Save changes
+1413840080500	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1413840080500	addons.xpi-utils	DEBUG	Updating add-on states
+1413840080501	addons.xpi-utils	DEBUG	Writing add-ons list
+1413840080887	DeferredSave.extensions.json	DEBUG	Starting timer
+1413840080916	addons.manager	DEBUG	shutdown
+1413840080917	DeferredSave.extensions.json	DEBUG	Starting write
+1413840080918	addons.xpi	DEBUG	shutdown
+1413840080918	addons.xpi-utils	DEBUG	shutdown
+1413840080968	DeferredSave.extensions.json	DEBUG	Write succeeded
+1413840080968	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1413840080968	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1413840080970	addons.manager	DEBUG	Async provider shutdown done
+1413840081235	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: ["XPIProvider"]
+1413840081236	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: ["LightweightThemeManager"]
+1413840081238	addons.xpi	DEBUG	startup
+1413840081238	addons.xpi	INFO	Mapping {BBDA0591-3099-440a-AA10-41764D9DB4DB} to C:\ProgramData\Symantec\Symantec Endpoint Protection\12.1.3001.165.105\Data\IPSFF
+1413840081239	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1413840081239	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1413840081239	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1413840081240	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\pptipi\AppData\Local\Temp\anonymous3386957509747968548webdriver-profile\extensions\fxdriver@googlecode.com
+1413840081241	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\pptipi\AppData\Local\Temp\anonymous3386957509747968548webdriver-profile\extensions\webdriver-staging
+1413840081241	addons.xpi	DEBUG	checkForChanges
+1413840081256	addons.xpi	DEBUG	No changes found
+
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 22:18:01'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:121)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:245)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:109)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:183)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:178)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:174)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:92)
+	at com.amazon.testpages.SimpleAmazonSearchTest.setupSelenium(SimpleAmazonSearchTest.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:69)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+\extensions\webdriver-staging
+1413840080316	addons.xpi	DEBUG	checkForChanges
+1413840080340	addons.xpi	DEBUG	Directory state JSON differs: cache [] state [{"name":"winreg-app-global","addons":{"{BBDA0591-3099-440a-AA10-41764D9DB4DB}":{"descriptor":"C:\\ProgramData\\Symantec\\Symantec Endpoint Protection\\12.1.3001.165.105\\Data\\IPSFF","mtime":1406623549477,"rdfTime":1406623549473}}},{"name":"app-global","addons":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"descriptor":"C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","mtime":1412022267098,"rdfTime":1412022267011}}},{"name":"app-profile","addons":{"fxdriver@googlecode.com":{"descriptor":"C:\\Users\\pptipi\\AppData\\Local\\Temp\\anonymous3386957509747968548webdriver-profile\\extensions\\fxdriver@googlecode.com","mtime":1413840079870,"rdfTime":1413840079807}}}]
+1413840080346	addons.xpi-utils	DEBUG	Opening XPI database C:\Users\pptipi\AppData\Local\Temp\anonymous3386957509747968548webdriver-profile\extensions.json
+1413840080348	addons.xpi	DEBUG	New add-on fxdriver@googlecode.com installed in app-profile
+1413840080459	addons.xpi-utils	DEBUG	Make addon app-profile:fxdriver@googlecode.com visible
+1413840080461	DeferredSave.extensions.json	DEBUG	Save changes
+1413840080461	DeferredSave.extensions.json	DEBUG	Save changes
+1413840080461	addons.xpi	DEBUG	New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
+1413840080466	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
+1413840080466	DeferredSave.extensions.json	DEBUG	Save changes
+1413840080466	DeferredSave.extensions.json	DEBUG	Save changes
+1413840080467	addons.xpi	DEBUG	New add-on {BBDA0591-3099-440a-AA10-41764D9DB4DB} installed in winreg-app-global
+1413840080478	addons.xpi-utils	DEBUG	Make addon winreg-app-global:{BBDA0591-3099-440a-AA10-41764D9DB4DB} visible
+1413840080479	DeferredSave.extensions.json	DEBUG	Save changes
+1413840080479	DeferredSave.extensions.json	DEBUG	Save changes
+1413840080500	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1413840080500	addons.xpi-utils	DEBUG	Updating add-on states
+1413840080501	addons.xpi-utils	DEBUG	Writing add-ons list
+1413840080887	DeferredSave.extensions.json	DEBUG	Starting timer
+1413840080916	addons.manager	DEBUG	shutdown
+1413840080917	DeferredSave.extensions.json	DEBUG	Starting write
+1413840080918	addons.xpi	DEBUG	shutdown
+1413840080918	addons.xpi-utils	DEBUG	shutdown
+1413840080968	DeferredSave.extensions.json	DEBUG	Write succeeded
+1413840080968	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1413840080968	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1413840080970	addons.manager	DEBUG	Async provider shutdown done
+1413840081235	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: ["XPIProvider"]
+1413840081236	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: ["LightweightThemeManager"]
+1413840081238	addons.xpi	DEBUG	startup
+1413840081238	addons.xpi	INFO	Mapping {BBDA0591-3099-440a-AA10-41764D9DB4DB} to C:\ProgramData\Symantec\Symantec Endpoint Protection\12.1.3001.165.105\Data\IPSFF
+1413840081239	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1413840081239	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1413840081239	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1413840081240	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\pptipi\AppData\Local\Temp\anonymous3386957509747968548webdriver-profile\extensions\fxdriver@googlecode.com
+1413840081241	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\pptipi\AppData\Local\Temp\anonymous3386957509747968548webdriver-profile\extensions\webdriver-staging
+1413840081241	addons.xpi	DEBUG	checkForChanges
+1413840081256	addons.xpi	DEBUG	No changes found
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:109)
+	... 37 more
+
+search_amazon(com.amazon.testpages.SimpleAmazonSearchTest)  Time elapsed: 49.456 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.amazon.testpages.SimpleAmazonSearchTest.closeSelenium(SimpleAmazonSearchTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:37)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:69)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
